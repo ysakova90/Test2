@@ -1,5 +1,5 @@
 output "vpc_id" {
-  value = module.vpc-team1.vpc_id
+  value = module.vpc.vpc_id
 }
 output private_subnets {
   description = "Prints out private_subnets"
