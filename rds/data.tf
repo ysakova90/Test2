@@ -1,10 +1,9 @@
 data "terraform_remote_state" "vpc" {
-  backend = "remote"
+  backend = "s3"
 
   config = {
-    organization = "ysakova"
-    workspaces = {
-      name = "vpc"
+    bucket = "team1-aws-storage"
+    key = "path/to/my/tfstate"
+    region = "us-east-1"
     }
   }
-}
