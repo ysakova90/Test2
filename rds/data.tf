@@ -1,10 +1,4 @@
-data "terraform_remote_state" "vpc" {
+data "terraform_remote_state" "backend" {
   backend = "remote"
 
-  config = {
-    organization = "ysakova"
-    workspaces = {
-      name = "vpc"
-    }
-  }
 }
